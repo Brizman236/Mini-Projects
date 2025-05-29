@@ -1,0 +1,58 @@
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+
+.container-fluid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.card {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    padding: 2.5rem;
+    background: white;
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    width: 95%;
+    max-width: 1400px;
+}
+
+.table {
+    margin-bottom: 0;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+    padding: 1.2rem;
+    font-weight: 600;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.table tbody td, .table tbody th {
+    padding: 1.2rem;
+    vertical-align: middle;
+    border-bottom: 1px solid #f2f2f2;
+    color: #444;
+    text-align: center;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+    transition: background-color 0.2s ease;
+}
+
+button:hover{
+    transform: scale(1.1);
+    transition: .3s ease-in-out;
+}
