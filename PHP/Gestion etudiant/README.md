@@ -1,5 +1,3 @@
-Voici une version **plus professionnelle** et fluide de la description de ton projet, avec une formulation soignée :
-
 # Description du Projet
 
 Ce projet est une simulation simple de la gestion d'une base de données d'étudiants.
