@@ -1,0 +1,21 @@
+[
+  {
+    "id": 1,
+    "nom": "Eric",
+    "emprunt": []
+  },
+  {
+    "id": 2,
+    "nom": "Kossi",
+    "emprunt": [
+      1
+    ]
+  },
+  {
+    "id": 3,
+    "nom": "robert",
+    "emprunt": [
+      2
+    ]
+  }
+]

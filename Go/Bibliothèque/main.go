@@ -48,8 +48,10 @@ func console(librairie map[string]*Livre){
             fmt.Print("Bye !")
             return
         default :
-            rouge := color.New(color.FgRed)
-            rouge.Println("[+] Cette option n'est pas disponible ")
+            rouge := color.New(color.FgHiRed)
+            rouge.Print("[+] Cette option n'est pas disponible. Appuyer sur ENTRER ")
+            reader.ReadString('\n')
+
         }
     }
 }
@@ -62,8 +64,12 @@ func addBook(librairie map[string]*Livre) {
     auteur, _ := reader.ReadString('\n')
     auteur = strings.TrimSpace(auteur)
 
+    vert := color.New(color.FgHiGreen)
+
     librairie[titre] = &Livre{Titre: titre, Auteur: auteur, Disponible: true}
 
+    vert.Print("[+] ", titre, " a été ajouté avec succès ! Appuyer sur ENTRER ")
+    reader.ReadString('\n')
     fmt.Println("\n\n")
 }
 
@@ -113,15 +119,18 @@ func borrowBook(librairie map[string]*Livre) {
 
     livre, ok := librairie[titre]
     if !ok {
-        rouge.Println("[+] Le livre n'existe pas")
+        rouge.Print("[+] Le livre n'existe pas. Appuyer sur ENTRER ")
+        reader.ReadString('\n')
         return
     }
 
     if livre.Disponible {
-        vertGras.Println("[+] Le livre", titre, "a été emprunté avec succès !")
+        vertGras.Print("[+] ", titre, " a été emprunté avec succès ! Appuyer sur ENTRER ")
+        reader.ReadString('\n')
         switchAvailable(librairie, titre)
     } else {
-        jaune.Println("[+] Le livre", titre, "n'est pas disponible")
+        jaune.Print("[+] ", titre, " n'est pas disponible. Appuyer sur ENTRER ")
+        reader.ReadString('\n')
     }
     fmt.Println("\n\n")
 }
@@ -141,17 +150,20 @@ func returnBook(librairie map[string]*Livre){
         if title == titre && !livre.Disponible {
             switchAvailable(librairie, title)
             isExist = true
-            vertGras.Println("[+] ", titre, " est rendu avec succès !")
+            vertGras.Print("[+] ", titre, " est rendu avec succès ! Appuyer sur ENTRER ")
+            reader.ReadString('\n')
             return
         }
         if title == titre && livre.Disponible {
-            jaune.Println("[+] ", titre, " n'a pas été emprunté ")
+            jaune.Print("[+] ", titre, " n'a pas été emprunté. Appuyer sur ENTRER ")
+            reader.ReadString('\n')
             return
         }
     }
 
     if !isExist {
-        rouge.Println("[+] ", titre, " n'a jamais été dans cette bibliothèque ")
+        rouge.Print("[+] ", titre, " n'a jamais été dans cette bibliothèque. Appuyer sr ENTRER ")
+        reader.ReadString('\n')
     }
 }
 

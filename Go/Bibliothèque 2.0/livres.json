@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "titre": "Le Petit Prince",
+    "auteur": "Antoine de Saint-Exupéry",
+    "year": 1943,
+    "genre": "Conte philosophique",
+    "disp": false
+  },
+  {
+    "id": 2,
+    "titre": "1984",
+    "auteur": "George Orwell",
+    "year": 1949,
+    "genre": "Dystopie",
+    "disp": false
+  },
+  {
+    "id": 3,
+    "titre": "L'Étranger",
+    "auteur": "Albert Camus",
+    "year": 1942,
+    "genre": "Roman",
+    "disp": false
+  },
+  {
+    "id": 4,
+    "titre": "Harry Potter à l'école des sorciers",
+    "auteur": "J.K. Rowling",
+    "year": 1997,
+    "genre": "Fantasy",
+    "disp": true
+  },
+  {
+    "id": 5,
+    "titre": "Les Misérables",
+    "auteur": "Victor Hugo",
+    "year": 1862,
+    "genre": "Roman historique",
+    "disp": true
+  },
+  {
+    "id": 5,
+    "titre": "Les Misérables",
+    "auteur": "Victor Hugo",
+    "year": 1862,
+    "genre": "Roman historique",
+    "disp": true
+  },
+  {
+    "id": 7,
+    "titre": "L'art de dormir en classe",
+    "auteur": "Diouf Mohamed",
+    "year": 2025,
+    "genre": "Stratagème",
+    "disp": true
+  },
+  {
+    "id": 8,
+    "titre": "Germinal",
+    "auteur": "Emile Zola",
+    "year": 1820,
+    "genre": "Roman",
+    "disp": true
+  },
+  {
+    "id": 9,
+    "titre": "dog",
+    "auteur": "cat",
+    "year": 1234,
+    "genre": "drama",
+    "disp": true
+  }
+]
